@@ -13,7 +13,7 @@ import CoreLocation
 
 public extension AxcPermissionLib {
     /// 获取定位权限状态同步
-    static var LocationStatus: Status {
+    static var CheckLocationStatus: Status {
         var status: Status = .unknow
         // 手机的定位权限
         if !CLLocationManager.locationServicesEnabled() {

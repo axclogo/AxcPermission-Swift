@@ -9,7 +9,7 @@ import CoreTelephony
 
 public extension AxcPermissionLib {
     /// 获取蜂窝网络权限状态
-    static var NetworkStatus: Status {
+    static var CheckNetworkStatus: Status {
         var status: Status = .unknow
         let state = CTCellularData().restrictedState
         switch state {

@@ -12,7 +12,7 @@ import AppTrackingTransparency
 
 public extension AxcPermissionLib {
     /// 获取广告标识符权限状态
-    static var IdfaStatus: Status {
+    static var CheckIdfaStatus: Status {
         var status: Status = .unknow
         if #available(iOS 14, *) {
             let trackingStatus = ATTrackingManager.trackingAuthorizationStatus

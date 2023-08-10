@@ -11,7 +11,7 @@ import Contacts
 
 public extension AxcPermissionLib {
     /// 获取通讯录权限状态
-    static var AddressBookStatus: Status {
+    static var CheckAddressBookStatus: Status {
         var status: Status = .unknow
         let authStatus: CNAuthorizationStatus = CNContactStore.authorizationStatus(for: .contacts)
         switch authStatus {

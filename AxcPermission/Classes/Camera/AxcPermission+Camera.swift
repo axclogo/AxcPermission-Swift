@@ -11,7 +11,7 @@ import AVFoundation
 
 public extension AxcPermissionLib {
     /// 获取摄像头权限状态
-    static var CameraStatus: Status {
+    static var CheckCameraStatus: Status {
         var status: Status = .unknow
         let authStatus = AVCaptureDevice.authorizationStatus(for: .video)
         switch authStatus {

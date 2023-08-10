@@ -12,7 +12,7 @@ import Photos
 
 public extension AxcPermissionLib {
     /// 获取相册权限状态
-    static var PhotoAlbumStatus: Status {
+    static var CheckPhotoAlbumStatus: Status {
         var status: Status = .unknow
         if #available(iOS 14, *) {
             let authStatus = PHPhotoLibrary.authorizationStatus(for: .readWrite)

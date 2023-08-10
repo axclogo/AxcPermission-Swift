@@ -11,7 +11,7 @@ import EventKit
 
 public extension AxcPermissionLib {
     /// 获取日历权限状态
-    static var CalendarStatus: Status {
+    static var CheckCalendarStatus: Status {
         var status: Status = .unknow
         let authStatus: EKAuthorizationStatus = EKEventStore.authorizationStatus(for: .reminder)
         switch authStatus {

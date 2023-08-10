@@ -11,7 +11,7 @@ import EventKit
 
 public extension AxcPermissionLib {
     /// 获取提醒事项权限状态
-    static var RemindEventStatus: Status {
+    static var CheckRemindEventStatus: Status {
         var status: Status = .unknow
         let authStatus: EKAuthorizationStatus = EKEventStore.authorizationStatus(for: .event)
         switch authStatus {

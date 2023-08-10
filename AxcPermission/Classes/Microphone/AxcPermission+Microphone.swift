@@ -11,7 +11,7 @@ import AVFoundation
 
 public extension AxcPermissionLib {
     /// 获取麦克风权限状态
-    static var MicrophoneStatus: Status {
+    static var CheckMicrophoneStatus: Status {
         var status: Status = .unknow
         let authStatus = AVCaptureDevice.authorizationStatus(for: .audio)
         switch authStatus {

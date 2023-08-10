@@ -10,7 +10,7 @@ import UserNotifications
 public extension AxcPermissionLib {
     /// 获取通知权限状态（同步）
     /// 异步转同步，第一次会卡线程，非必要不建议使用
-    static var NotificationStatus: Status {
+    static var CheckNotificationStatus: Status {
         var status: Status = .unknow
         let queue = DispatchQueue(label: "com.AxcPermission.NotificationStatus")
         let semaphore = DispatchSemaphore(value: 0)
