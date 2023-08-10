@@ -1,5 +1,0 @@
-import requests
-
-
-
-print 'asd'

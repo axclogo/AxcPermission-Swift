@@ -1,0 +1,9 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AxcPermission_Example' do
+
+  pod 'AxcPermission', :path => '../'
+
+end
